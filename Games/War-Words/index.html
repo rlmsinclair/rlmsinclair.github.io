@@ -6,9 +6,20 @@
   </head>
   <body>
     <h1>War Words</h1>
-    <div class='text-input'>
-      <input type='text'>
+    <div class='rules'>
+      <h2>Rules</h2>
+      <p>
+        Players take turns typing a letter.
+        These letters must always be at the beginning of a word.
+        However, if a player makes a word, that player loses.
+        Therefore, the winner is the player who successfully "traps" the last player into making a word.
+      </p>
     </div>
+    <div>
+      <input type='text' maxlength='1' id='form'>
+      <button type='button' id='submit'>Submit</button>
+    </div>
+    <p id='text-shown' class='text-shown'></p>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
